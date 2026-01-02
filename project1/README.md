@@ -69,3 +69,22 @@ Experiments were run multiple times using:
 - With **larger samples**, metrics cluster into a narrower range.
 - High
 
+## Hypothesis
+Model performance metrics (Accuracy and RMSE) will show higher variance
+when trained on smaller samples and will stabilize as sample size increases.
+
+
+
+## Results Snapshot
+
+| Sample Size | Accuracy Range | RMSE Range |
+|------------|---------------|------------|
+| 10% | 0.66 – 0.89 | 27 – 121 |
+| 100% | 0.79 – 0.84 | 40 – 68 |
+
+
+## Conclusion
+This project demonstrates that single-run model metrics are unreliable,
+especially with limited data. Metric stability improves as sample size grows,
+highlighting the need for repeated evaluation and cross-validation in real-world
+machine learning workflows.
